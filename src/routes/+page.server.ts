@@ -1,7 +1,7 @@
 import { redirect } from "@sveltejs/kit"
 import type { Actions } from "./$types"
 
-
+//import {newTable} from '$lib/database/turso'
  export async function load({cookies}){
 
   const hasAuthCookie = cookies.get('auth'); 
@@ -10,6 +10,7 @@ import type { Actions } from "./$types"
        throw redirect(302, '/play');
     }
    }
+
 
 
 export const actions: Actions = {

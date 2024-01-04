@@ -26,5 +26,10 @@
 		"typescript": "^5.0.0",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@libsql/client": "^0.4.0-pre.5",
+		"@types/uuid": "^9.0.7",
+		"uuid4": "^2.0.3"
+	}
 }

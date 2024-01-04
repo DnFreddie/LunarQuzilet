@@ -1,8 +1,20 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
+    import { redirect } from '@sveltejs/kit';
+
     let paswwd:string
+
+     function handleButtonClick() {
+        console.log("ksjdksdjsjkksjk")
+
+
+
+
+   throw  redirect(303,"/register");
+  }
     export let form;
        $: if (form && form.failed) {
+
         paswwd =''
     }
 
@@ -30,6 +42,6 @@
     {/if}
     </div>
 
-
-
-
+ <a href="/register">
+    Go to Register Page
+  </a>
